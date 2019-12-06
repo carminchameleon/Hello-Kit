@@ -138,8 +138,9 @@ function changeImage(event){
 
 const keys = document.querySelectorAll('.key')
 keys.forEach(key => key.addEventListener('transitionend', removeTransition))
-window.addEventListener('keydown',playSound) // 함수 분리
 window.addEventListener('keydown',changeImage)
+window.addEventListener('keydown',playSound) // 함수 분리
+
 
 
 </script>
